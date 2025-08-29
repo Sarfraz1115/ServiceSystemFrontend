@@ -1,0 +1,114 @@
+/* Wrapper */
+.customer-list {
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  margin-top: 12px;
+}
+
+/* Table */
+.customer-list table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.customer-list thead {
+  background: #f9fafb;
+}
+
+.customer-list th {
+  padding: 14px 18px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.customer-list td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #111827;
+}
+
+.customer-list tr:hover {
+  background: #f9fafb;
+  transition: background 0.2s;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  background: #dc2626;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* Loading */
+.loading-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  border: 4px solid transparent;
+  border-top: 4px solid #2563eb;
+  border-right: 4px solid #2563eb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error */
+.error-box {
+  margin: 20px;
+  padding: 14px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  color: #b91c1c;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  color: #6b7280;
+}
+
+.empty-state h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.empty-state p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}

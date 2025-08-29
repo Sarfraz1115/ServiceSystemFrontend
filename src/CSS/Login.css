@@ -1,0 +1,184 @@
+/* Page Background */
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbcfe8, #ddd6fe, #bfdbfe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Card */
+.login-container {
+  max-width: 420px;
+  width: 100%;
+}
+
+.login-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.login-header {
+  position: relative;
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #2563eb, #7c3aed, #db2777);
+  color: white;
+}
+
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png");
+}
+
+.header-title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.header-subtitle {
+  position: relative;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #e0e7ff;
+  z-index: 1;
+}
+
+/* Body */
+.login-body {
+  padding: 32px;
+}
+
+.error-box {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #dc2626;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  width: 20px;
+  height: 20px;
+}
+
+.input-wrapper input {
+  width: 80%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: #9333ea;
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.3);
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #2563eb, #7c3aed, #db2777);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s;
+  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.3);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Loading spinner */
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Demo credentials */
+.demo-creds {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.demo-creds span {
+  font-weight: 600;
+  color: #111827;
+}
